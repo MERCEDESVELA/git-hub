@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Mercedes Vela">
+    <title>Javas 9</title>
+    <style>
+        h1{color: rgb(223, 44, 12);text-align: center;}
+        h2{text-align: center;}
+        img{background-image: url(images.jpg);align-items: right;display: flex;}
+    </style>
+</head>
+<body>
+    <h1>RELLENE EL FORMULARIO</h1>
+    <label> Escribe tu nombre </label>
+    <input id="ejemplo">
+    <button onclick="miF()"> Enviar </button>
+    <h2> Tu nombre es <span id="nombre"> ... </span></h2>
+    <label> Escribe tu calle  </label>
+    <input id="ejem">
+    <button onclick="mi()"> Enviar </button>
+    <h2> Vives en la calle <span id="color"> ... </span></h2>
+    <label> Escribe tu NACIONALIDAD </label>
+    <input id="ejem1">
+    <button onclick="m()"> Enviar </button>
+    <h2> Soy <span id="pais"> ... </span></h2>
+    <img src="images.jpg">
+    <script>
+    function miF(){
+        let x = document.getElementById("ejemplo").value;
+        document.getElementById("nombre"). innerHTML= x; // con esta segunda línea escribimos el value en nuestro h1
+     }
+     function mi(){
+        let y = document.getElementById("ejem").value;
+        document.getElementById("color"). innerHTML= y; // con esta segunda línea escribimos el value en nuestro h1
+     }
+     function m(){
+        let c = document.getElementById("ejem1").value;
+        document.getElementById("pais"). innerHTML= c; // con esta segunda línea escribimos el value en nuestro h1
+     }
+     </script>
+     
+
+
+    
+</body>
+</html>
